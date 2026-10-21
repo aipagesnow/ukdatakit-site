@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ukdatakit · Clean UK public data, ready to use</title>
+<meta name="description" content="ukdatakit builds pay-per-result tools for official UK public data: HM Land Registry house prices and the Home Office visa sponsor register, kept up to date on the Apify Store.">
+<link rel="canonical" href="https://ukdatakit.com/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#0b3d5c">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ukdatakit">
+<meta property="og:title" content="ukdatakit · Clean UK public data, ready to use">
+<meta property="og:description" content="Official UK government data sources, kept up to date, pay per result.">
+<meta property="og:url" content="https://ukdatakit.com/">
+<meta property="og:image" content="https://ukdatakit.com/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--ink:#10212e;--muted:#526472;--brand:#0b3d5c;--accent:#14a37f;--line:#e3e9ee;--bg:#f6f9fb}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#fff}
+a{color:var(--brand)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.25rem;letter-spacing:-.02em;text-decoration:none;color:var(--ink)}
+.logo svg{width:30px;height:30px}.logo b{color:var(--accent)}
+.nav nav a{margin-left:18px;text-decoration:none;color:var(--muted);font-size:.95rem}
+.nav nav a:hover{color:var(--ink)}
+@media(max-width:560px){.nav nav a.hide-s{display:none}}
+.hero{background:linear-gradient(180deg,var(--bg),#fff);padding:64px 0 48px}
+.eyebrow{display:inline-block;font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);background:#e6f6f1;border-radius:99px;padding:4px 12px}
+h1{font-size:clamp(2rem,6vw,3.2rem);line-height:1.1;letter-spacing:-.03em;margin:16px 0}
+.lead{font-size:1.15rem;color:var(--muted);max-width:620px}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 28px;padding:0;list-style:none}
+.pills li{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 12px;font-size:.92rem}
+.pills li::before{content:"✓ ";color:var(--accent);font-weight:700}
+.btn{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;font-weight:600;padding:12px 20px;border-radius:10px}
+.btn:hover{background:#0e4d74}.btn.ghost{background:#fff;color:var(--brand);border:1px solid var(--brand);margin-left:8px}
+section{padding:56px 0}
+h2{font-size:1.7rem;letter-spacing:-.02em;margin:0 0 8px}
+.sub{color:var(--muted);margin:0 0 28px}
+.grid{display:grid;gap:20px}
+@media(min-width:760px){.grid.two{grid-template-columns:1fr 1fr}.grid.three{grid-template-columns:repeat(3,1fr)}}
+.card{border:1px solid var(--line);border-radius:14px;padding:24px;background:#fff;display:flex;flex-direction:column}
+.card h3{margin:0 0 4px;font-size:1.25rem}
+.src{font-size:.85rem;color:var(--muted);margin:0 0 14px}
+.card ul{padding-left:18px;margin:0 0 16px}.card li{margin:4px 0}
+.get{background:var(--bg);border-radius:10px;padding:12px 14px;font-size:.92rem;margin:0 0 18px}
+.card .btn{margin-top:auto;align-self:flex-start}
+.steps{counter-reset:s}
+.step{border-top:3px solid var(--accent);padding-top:14px}
+.step::before{counter-increment:s;content:counter(s);display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--brand);color:#fff;font-weight:700;margin-bottom:8px}
+.step h3{margin:0 0 4px;font-size:1.05rem}.step p{margin:0;color:var(--muted)}
+.custom{background:var(--brand);color:#fff;border-radius:16px;padding:36px 28px}
+.custom p{color:#cfe0ea;max-width:640px}.custom .btn{background:var(--accent)}
+footer{border-top:1px solid var(--line);padding:32px 0 40px;font-size:.88rem;color:var(--muted)}
+footer p{margin:6px 0}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="logo" href="/" aria-label="ukdatakit home"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0b3d5c"/><rect x="14" y="36" width="8" height="14" rx="2" fill="#5fd3b5"/><rect x="28" y="26" width="8" height="24" rx="2" fill="#fff"/><rect x="42" y="16" width="8" height="34" rx="2" fill="#5fd3b5"/></svg><span>uk<b>data</b>kit</span></a>
+<nav><a href="#tools">Tools</a><a class="hide-s" href="#how">How it works</a><a href="#custom">Custom data</a></nav>
+</div></header>
+<main>
+<div class="hero"><div class="wrap">
+<span class="eyebrow">UK public data tools</span>
+<h1>Clean UK public data, ready to use.</h1>
+<p class="lead">Structured, reliable datasets drawn straight from official UK government sources. No scraping headaches, no spreadsheets to tidy. Run a tool, get clean results.</p>
+<ul class="pills"><li>Official government sources</li><li>Kept up to date</li><li>Pay per result</li></ul>
+<a class="btn" href="https://apify.com/ukdatakit">View our tools on Apify</a><a class="btn ghost" href="#custom">Custom data</a>
+</div></div>
+
+<section id="tools"><div class="wrap">
+<h2>Our tools</h2>
+<p class="sub">Available on the Apify Store. Run them in your browser, on a schedule, or through the API.</p>
+<div class="grid two">
+<article class="card">
+<h3>UK House Prices</h3>
+<p class="src">Source: HM Land Registry Price Paid Data</p>
+<ul><li>Sold prices by full postcode, sector or outcode</li><li>Filter by date range</li><li>Summary statistics including the median price</li></ul>
+<p class="get"><strong>What you get:</strong> one clean row per sale (price, date, address, property type, tenure, new build), plus a summary with count, median and range.</p>
+<a class="btn" href="https://apify.com/ukdatakit">Open on Apify</a>
+</article>
+<article class="card">
+<h3>UK Visa Sponsor Register</h3>
+<p class="src">Source: Home Office register of licensed sponsors</p>
+<ul><li>Search the licensed sponsor list by organisation name, town and route</li><li>Change monitor flags sponsors newly added or removed</li><li>Ideal for recruiters, job seekers and compliance checks</li></ul>
+<p class="get"><strong>What you get:</strong> organisation name, town, county, type and rating, and visa route, with added or removed status when you monitor for changes.</p>
+<a class="btn" href="https://apify.com/ukdatakit">Open on Apify</a>
+</article>
+</div>
+</div></section>
+
+<section id="how" style="background:var(--bg)"><div class="wrap">
+<h2>How it works</h2>
+<p class="sub">From question to clean data in minutes.</p>
+<div class="grid three steps">
+<div class="step"><h3>Pick a tool</h3><p>Choose the dataset you need on our Apify profile.</p></div>
+<div class="step"><h3>Set your inputs</h3><p>Enter a postcode, name, town or date range, then run it.</p></div>
+<div class="step"><h3>Download results</h3><p>Export as JSON, CSV or Excel, or pull it by API. You pay only per result.</p></div>
+</div>
+</div></section>
+
+<section id="custom"><div class="wrap">
+<div class="custom">
+<h2>Custom data jobs</h2>
+<p>Need a different UK public dataset, a regular feed, or a specific format? We can build a tailored UK data feed for your team, sourced from official open data.</p>
+<a class="btn" href="mailto:hello@ukdatakit.com?subject=Custom%20UK%20data%20feed">Email hello@ukdatakit.com</a>
+</div>
+</div></section>
+</main>
+<footer><div class="wrap">
+<p><strong>Data sources.</strong> Contains HM Land Registry data © Crown copyright and database right, licensed under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a>. Register of licensed sponsors published by the Home Office under the Open Government Licence v3.0.</p>
+<p><strong>Privacy.</strong> This site uses no tracking cookies and no analytics.</p>
+<p>Contact: <a href="mailto:hello@ukdatakit.com">hello@ukdatakit.com</a> · © 2026 ukdatakit</p>
+</div></footer>
+</body>
+</html>
