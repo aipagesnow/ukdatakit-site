@@ -9,5 +9,5 @@
 
 ## Other
 
-- [Custom data jobs](https://ukdatakit.com/#custom): tailored feeds from official UK open data. Contact hello@ukdatakit.com.
+- [Custom data jobs](https://ukdatakit.com/#custom): tailored feeds from official UK open data. Contact vora+ukdatakit@mail.grokbot.com.
 - Data licence: Open Government Licence v3.0 (Crown copyright).
