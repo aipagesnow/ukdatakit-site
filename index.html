@@ -7,11 +7,10 @@
 <meta name="description" content="Pay-per-result tools for official UK public data on the Apify Store: HM Land Registry sold house prices and the Home Office register of licensed visa sponsors.">
 <script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});
-try{if(localStorage.getItem('udk-consent')==='granted')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}
-gtag('js',new Date());gtag('config','G-375E7C60SD');
+gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});
+function udkLoadGA(){if(window.udkGA)return;window.udkGA=1;gtag('consent','update',{analytics_storage:'granted'});gtag('js',new Date());gtag('config','G-375E7C60SD');var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-375E7C60SD';document.head.appendChild(s);}
+try{if(localStorage.getItem('udk-consent')==='granted')udkLoadGA();}catch(e){}
 </script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-375E7C60SD"></script>
 <link rel="canonical" href="https://ukdatakit.com/">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -157,7 +156,7 @@ footer p{margin:6px 0}
 (function(){var k='udk-consent',b=document.getElementById('cc');
 function get(){try{return localStorage.getItem(k)}catch(e){return null}}
 function set(v){try{localStorage.setItem(k,v)}catch(e){}}
-function done(v){set(v);gtag('consent','update',{analytics_storage:v==='granted'?'granted':'denied'});b.hidden=true;}
+function done(v){set(v);if(v==='granted')udkLoadGA();else gtag('consent','update',{analytics_storage:'denied'});b.hidden=true;}
 document.getElementById('cc-yes').onclick=function(){done('granted')};
 document.getElementById('cc-no').onclick=function(){done('denied');document.cookie.split(';').forEach(function(c){var n=c.split('=')[0].trim();if(n.indexOf('_ga')===0){['',location.hostname,'.'+location.hostname.replace(/^www\./,'')].forEach(function(d){document.cookie=n+'=;Max-Age=0;path=/'+(d?';domain='+d:'')})}})};
 document.getElementById('cc-open').onclick=function(){b.hidden=false;document.getElementById('cc-yes').focus()};
