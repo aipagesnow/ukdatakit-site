@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UK Government Consultations Tracker · ukdatakit</title>
+<meta name="description" content="Open, closing-soon and outcome-published UK government consultations and calls for evidence on GOV.UK, with days left to respond. Filter by keyword or department. Pay per result on the Apify Store.">
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});
+function udkLoadGA(){window['ga-disable-G-375E7C60SD']=false;gtag('consent','update',{analytics_storage:'granted'});if(window.udkGA)return;window.udkGA=1;gtag('js',new Date());gtag('config','G-375E7C60SD');var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-375E7C60SD';document.head.appendChild(s);}
+try{if(localStorage.getItem('udk-consent')==='granted')udkLoadGA();}catch(e){}
+</script>
+<link rel="canonical" href="https://ukdatakit.com/uk-gov-consultations">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#0b3d5c">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ukdatakit">
+<meta property="og:title" content="UK Government Consultations Tracker · ukdatakit">
+<meta property="og:description" content="Open, closing-soon and outcome-published UK government consultations and calls for evidence on GOV.UK, with days left to respond. Filter by keyword or department. Pay per result on the Apify Store.">
+<meta property="og:url" content="https://ukdatakit.com/uk-gov-consultations">
+<meta property="og:image" content="https://ukdatakit.com/og.png">
+<meta property="og:image:secure_url" content="https://ukdatakit.com/og.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="UK Government Consultations Tracker · ukdatakit">
+<meta name="twitter:description" content="Open, closing-soon and outcome-published UK government consultations and calls for evidence on GOV.UK, with days left to respond. Filter by keyword or department. Pay per result on the Apify Store.">
+<meta name="twitter:image" content="https://ukdatakit.com/og.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://ukdatakit.com/#org", "name": "ukdatakit", "url": "https://ukdatakit.com/", "logo": "https://ukdatakit.com/icon-512.png", "email": "vora+ukdatakit@mail.grokbot.com", "sameAs": ["https://apify.com/ukdatakit"]}, {"@type": "SoftwareApplication", "@id": "https://ukdatakit.com/uk-gov-consultations#app", "name": "UK Government Consultations Tracker", "applicationCategory": "BusinessApplication", "operatingSystem": "Web (Apify platform)", "url": "https://apify.com/ukdatakit/uk-gov-consultations", "sameAs": ["https://ukdatakit.com/uk-gov-consultations"], "description": "Open, closed and outcome-published UK government consultations and calls for evidence on GOV.UK, with days left to respond, filtered by keyword or department. Pay per consultation.", "publisher": {"@id": "https://ukdatakit.com/#org"}, "isBasedOn": {"@id": "https://ukdatakit.com/#ds-consultations"}}]}</script>
+<style>
+:root{--ink:#10212e;--muted:#526472;--brand:#0b3d5c;--accent:#14a37f;--line:#e3e9ee;--bg:#f6f9fb}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#fff}
+a{color:var(--brand)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.25rem;letter-spacing:-.02em;text-decoration:none;color:var(--ink)}
+.logo svg{width:30px;height:30px}.logo b{color:var(--accent)}
+.nav nav a{margin-left:18px;text-decoration:none;color:var(--muted);font-size:.95rem}
+.nav nav a:hover{color:var(--ink)}
+@media(max-width:560px){.nav nav a.hide-s{display:none}}
+.hero{background:linear-gradient(180deg,var(--bg),#fff);padding:64px 0 48px}
+.eyebrow{display:inline-block;font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#0b6b54;background:#e6f6f1;border-radius:99px;padding:4px 12px}
+h1{font-size:clamp(2rem,6vw,3.2rem);line-height:1.1;letter-spacing:-.03em;margin:16px 0}
+.lead{font-size:1.15rem;color:var(--muted);max-width:620px}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 28px;padding:0;list-style:none}
+.pills li{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 12px;font-size:.92rem}
+.pills li::before{content:"✓ ";color:#0b6b54;font-weight:700}
+.btn{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;font-weight:600;padding:12px 20px;border-radius:10px}
+.btn:hover{background:#0e4d74}.btn.ghost{background:#fff;color:var(--brand);border:1px solid var(--brand)}.btn.ghost:hover{background:var(--bg)}
+.ctas{display:flex;flex-wrap:wrap;gap:10px}
+a:focus-visible,.btn:focus-visible{outline:3px solid #f2b705;outline-offset:2px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:8px;background:#fff;padding:8px 12px;z-index:9}.skip:focus{left:8px}
+.get ul{margin:6px 0 0;padding-left:18px}.get li{margin:2px 0}
+section{padding:56px 0}
+h2{font-size:1.7rem;letter-spacing:-.02em;margin:0 0 8px}
+.sub{color:var(--muted);margin:0 0 28px}
+.grid{display:grid;gap:20px}
+@media(min-width:760px){.grid.two{grid-template-columns:1fr 1fr}.grid.three{grid-template-columns:repeat(3,1fr)}}
+.card{border:1px solid var(--line);border-radius:14px;padding:24px;background:#fff;display:flex;flex-direction:column}
+.card h3{margin:0 0 4px;font-size:1.25rem}
+.src{font-size:.85rem;color:var(--muted);margin:0 0 14px}
+.card ul{padding-left:18px;margin:0 0 16px}.card li{margin:4px 0}
+.get{background:var(--bg);border-radius:10px;padding:12px 14px;font-size:.92rem;margin:0 0 18px}
+.card .btn{margin-top:auto;align-self:flex-start}
+.steps{counter-reset:s}
+.step{border-top:3px solid var(--accent);padding-top:14px}
+.step::before{counter-increment:s;content:counter(s);display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--brand);color:#fff;font-weight:700;margin-bottom:8px}
+.step h3{margin:0 0 4px;font-size:1.05rem}.step p{margin:0;color:var(--muted)}
+.custom{background:var(--brand);color:#fff;border-radius:16px;padding:36px 28px}
+.custom p{color:#cfe0ea;max-width:640px}.custom h2{color:#fff}.custom .btn{background:#fff;color:var(--brand)}.custom .btn:hover{background:#e6f6f1}
+footer{border-top:1px solid var(--line);padding:32px 0 40px;font-size:.88rem;color:var(--muted)}
+footer p{margin:6px 0}
+.cc{position:fixed;left:12px;right:12px;bottom:12px;z-index:50;max-width:560px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 8px 28px rgba(16,33,46,.14);padding:14px 16px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;font-size:.92rem}
+.cc[hidden]{display:none}.cc p{margin:0;flex:1 1 240px;color:var(--ink)}
+.cc-b{display:flex;gap:8px;flex:0 0 auto}.cc-b button{font:inherit;font-weight:600;min-width:86px;padding:9px 14px;border-radius:10px;border:1px solid var(--brand);background:#fff;color:var(--brand);cursor:pointer}
+.cc-b button:hover{background:var(--bg)}.cc-b button:focus-visible,.cc-link:focus-visible{outline:3px solid #f2b705;outline-offset:2px}
+.cc-link{font:inherit;background:none;border:0;padding:0;color:var(--brand);text-decoration:underline;cursor:pointer}
+.crumb{font-size:.92rem;color:var(--muted);margin:0 0 16px}.crumb a{color:var(--muted);text-decoration:none}.crumb a:hover{color:var(--ink);text-decoration:underline}
+.tool-page{padding:40px 0 56px}.tool-page h1{font-size:clamp(1.7rem,4.5vw,2.4rem);margin:0 0 8px}
+.tool-page .lead{margin:0 0 28px}.tool-page h2{margin:32px 0 10px;font-size:1.25rem}
+.tool-page .get{margin:0 0 8px}.sample{background:#10212e;color:#e8f0f4;border-radius:10px;padding:14px 16px;overflow-x:auto;font-size:.82rem;line-height:1.45;margin:0 0 16px}
+.sample code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:pre}
+.faq h3{font-size:1.02rem;margin:18px 0 4px}.faq p{margin:0;color:var(--muted)}
+.other{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+@media(min-width:760px){.other{grid-template-columns:1fr 1fr}}.other a{text-decoration:none}.other a:hover{text-decoration:underline}
+.card h3 a{color:inherit;text-decoration:none}.card h3 a:hover{text-decoration:underline}.card .about{margin:0 0 14px;font-size:.95rem}
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header><div class="wrap nav">
+<a class="logo" href="/" aria-label="ukdatakit home"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0b3d5c"/><rect x="14" y="36" width="8" height="14" rx="2" fill="#5fd3b5"/><rect x="28" y="26" width="8" height="24" rx="2" fill="#fff"/><rect x="42" y="16" width="8" height="34" rx="2" fill="#5fd3b5"/></svg><span>uk<b>data</b>kit</span></a>
+<nav aria-label="Main"><a href="/#tools">Tools</a><a class="hide-s" href="/#how">How it works</a><a href="/#custom">Custom data</a></nav>
+</div></header>
+<main id="content" class="tool-page"><div class="wrap">
+<p class="crumb"><a href="/">Home</a> · <a href="/#tools">Tools</a> · UK Government Consultations Tracker</p>
+<h1>UK Government Consultations Tracker</h1>
+<p class="src">Source: GOV.UK search API</p>
+<p class="lead">Get UK government consultations and calls for evidence published on GOV.UK: open ones, sorted by closing date, with days left to respond; closed ones still waiting for a government response; and newly published outcomes. Schedule a watchlist so you don’t miss a deadline that affects your sector.</p>
+<p class="ctas"><a class="btn" href="https://apify.com/ukdatakit/uk-gov-consultations">Open on Apify</a></p>
+<h2>Who it’s for</h2>
+<p>People use it to:</p>
+<ul><li>Trade bodies, charities and campaign groups respond before deadlines on policy that affects their members.</li><li>Public affairs, law and consultancy firms run client alerts by department or keyword, for example “VAT”, “planning” or “social care”.</li><li>Businesses find out early about tax, regulation and licensing changes.</li><li>Journalists and researchers see what government is asking about and when responses come out.</li></ul>
+<h2>What it does</h2>
+<ul><li>Filter by status (open, closed or outcome), keyword or department (HM Treasury, HMRC, the Department for Education, MHCLG, DESNZ and every other GOV.UK organisation).</li><li>Limit open consultations to those closing in the next N days, or outcomes published or updated in the last N days.</li><li>Schedule “Only new since the last run” for alerts. The first run saves a baseline. Use a different watchlist name for each alert.</li><li>The default input returns all consultations open right now (about 60–80 at a time). No API key and no login.</li><li>You get the title, summary, dates, departments and a link. Open the link for the full documents and how to respond.</li></ul>
+<h2>What you get, one row per consultation</h2>
+<ul><li>Title, summary, type and status</li><li>Opening and closing dates, and days left</li><li>Department names</li><li>A link to the GOV.UK page</li></ul>
+<h2>Example output: an open consultation</h2>
+<pre class="sample"><code>{
+  &quot;title&quot;: &quot;Amendments to the Poisons Act 1972 framework&quot;,
+  &quot;summary&quot;: &quot;The government is consulting on amendments to strengthen the regulatory framework for explosives precursors and poisons under the Poisons Act 1972.&quot;,
+  &quot;type&quot;: &quot;consultation&quot;,
+  &quot;status&quot;: &quot;open&quot;,
+  &quot;documentType&quot;: &quot;open_consultation&quot;,
+  &quot;opens&quot;: &quot;2026-10-01&quot;,
+  &quot;closes&quot;: &quot;2026-11-11&quot;,
+  &quot;closesAt&quot;: &quot;2026-11-11T23:59:00.000+00:00&quot;,
+  &quot;daysLeft&quot;: 1,
+  &quot;lastUpdated&quot;: &quot;2026-10-01T09:00:48Z&quot;,
+  &quot;organisations&quot;: [&quot;Home Office&quot;],
+  &quot;organisationAcronyms&quot;: [&quot;Home Office&quot;],
+  &quot;organisationSlugs&quot;: [&quot;home-office&quot;],
+  &quot;url&quot;: &quot;https://www.gov.uk/government/consultations/amendments-to-the-poisons-act-1972-framework&quot;
+}</code></pre><h2>Example output: a published outcome</h2>
+<pre class="sample"><code>{
+  &quot;title&quot;: &quot;Modernising and standardising company tax returns&quot;,
+  &quot;type&quot;: &quot;consultation&quot;,
+  &quot;status&quot;: &quot;outcome published&quot;,
+  &quot;closes&quot;: &quot;2026-06-02&quot;,
+  &quot;lastUpdated&quot;: &quot;2026-10-28T13:50:46Z&quot;,
+  &quot;organisations&quot;: [&quot;HM Revenue &amp; Customs&quot;],
+  &quot;matchedKeywords&quot;: [&quot;tax&quot;],
+  &quot;url&quot;: &quot;https://www.gov.uk/government/consultations/modernising-and-standardising-company-tax-returns--2&quot;
+}</code></pre>
+<p>Status is “open”, “closed – awaiting outcome” or “outcome published”. If GOV.UK still labels a consultation as open after its closing date, the actor reports it as closed.</p>
+<h2>Pricing</h2>
+<p>You pay per result on Apify: $1.00 per 1,000 consultations. Set a spending limit on the run and the actor stops when it is reached. Current pricing is always shown on the Apify Store page.</p>
+<h2>Source and licence</h2>
+<p>Source: the <a href="https://www.gov.uk/api/search.json">GOV.UK search API</a> (the same index behind <a href="https://www.gov.uk/search/policy-papers-and-consultations">GOV.UK policy papers and consultations</a>), filtered to consultation and call-for-evidence document types. Licensed under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a>.</p>
+<p>No personal data. Documents are government publications. The tool includes UK government departments and agencies that publish on GOV.UK. The Scottish and Welsh Governments and the Northern Ireland Executive publish many consultations on their own sites, and those are not included.</p>
+<div class="faq">
+<h2>Common questions</h2>
+<h3>Does it include devolved governments?</h3><p>It includes UK government departments and agencies that publish on GOV.UK. The Scottish and Welsh Governments and the Northern Ireland Executive publish many consultations on their own sites, and those aren’t included.</p><h3>Does it include the full consultation text or response forms?</h3><p>No. You get the title, summary, dates, departments and link. Open the link for documents and how to respond.</p><h3>How do I find a department’s slug?</h3><p>Open its GOV.UK page, for example gov.uk/government/organisations/hm-treasury, and use the last part of the URL (hm-treasury).</p>
+</div>
+<p class="ctas" style="margin-top:28px"><a class="btn" href="https://apify.com/ukdatakit/uk-gov-consultations">Open on Apify</a> <a class="btn ghost" href="/#tools">All tools</a></p>
+<h2>Other tools</h2>
+<ul class="other"><li><a href="/#uk-house-prices">UK House Prices</a></li><li><a href="/#uk-visa-sponsor-register">UK Visa Sponsor Register</a></li><li><a href="/#uk-planning-constraints">UK Planning Constraints Checker</a></li><li><a href="/#uk-companies-house-id-verification">Companies House ID Verification Checker</a></li><li><a href="/#uk-food-business-leads">UK Food Business Leads</a></li><li><a href="/uk-teaching-vacancies">UK School Jobs &amp; Hiring Schools</a></li><li><a href="/uk-company-accounts">UK Company Accounts</a></li><li><a href="/uk-waste-carriers-register">UK Waste Carrier Licence Check</a></li><li><a href="/uk-nurseries-childcare">UK Nurseries &amp; Childcare</a></li></ul>
+</div></main>
+<footer><div class="wrap">
+<p><strong>Data sources.</strong> Contains public sector information licensed under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a>, including data from HM Land Registry, the Home Office, planning.data.gov.uk (Ministry of Housing, Communities and Local Government), Companies House, the Food Standards Agency, the Department for Education (Teaching Vacancies), Ofsted and GOV.UK. Contains Environment Agency information © Environment Agency and/or database right. ukdatakit is not affiliated with or endorsed by Companies House or any other government body.</p>
+<p><strong>Privacy.</strong> We use Google Analytics only if you accept analytics cookies. No advertising cookies. <button type="button" class="cc-link" id="cc-open">Cookie settings</button></p>
+<p>Contact: <a href="mailto:vora+ukdatakit@mail.grokbot.com">vora+ukdatakit@mail.grokbot.com</a> · © 2026 ukdatakit</p>
+</div></footer>
+<div class="cc" id="cc" role="region" aria-label="Cookie consent" hidden>
+<p>We use analytics cookies to see which pages help. Accept?</p>
+<div class="cc-b"><button type="button" id="cc-yes">Accept</button><button type="button" id="cc-no">Reject</button></div>
+</div>
+<script>
+(function(){var k='udk-consent',b=document.getElementById('cc');
+function get(){try{return localStorage.getItem(k)}catch(e){return null}}
+function set(v){try{localStorage.setItem(k,v)}catch(e){}}
+function done(v){set(v);if(v==='granted')udkLoadGA();else{window['ga-disable-G-375E7C60SD']=true;gtag('consent','update',{analytics_storage:'denied'});}b.hidden=true;}
+document.getElementById('cc-yes').onclick=function(){done('granted')};
+document.getElementById('cc-no').onclick=function(){done('denied');document.cookie.split(';').forEach(function(c){var n=c.split('=')[0].trim();if(n.indexOf('_ga')===0){['',location.hostname,'.'+location.hostname.replace(/^www\./,'')].forEach(function(d){document.cookie=n+'=;Max-Age=0;path=/'+(d?';domain='+d:'')})}})};
+document.getElementById('cc-open').onclick=function(){b.hidden=false;document.getElementById('cc-yes').focus()};
+if(!get())b.hidden=false;})();
+</script>
+</body>
+</html>
